@@ -1,0 +1,957 @@
+{
+	"info": {
+		"_postman_id": "894487c8-0561-4f3d-a735-d65c6b175f67",
+		"name": "CRUD_Mongo_DB",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:3001/api/category index",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Congelados\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3001/api/category",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"api",
+						"category"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3001/api/category category",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Congelados\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3001/api/category",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"api",
+						"category"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3001/api/category/61b4bda488174e5c543777cf category id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3001/api/category/61b4bda488174e5c543777cf",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"api",
+						"category",
+						"61b4bda488174e5c543777cf"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3001/api/category category_add",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Congelados\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3001/api/category",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"api",
+						"category"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3001/api/category category",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3001/api/category",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"api",
+						"category"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3001/api/category/61b4bf8588174e5c543777e4 category edit",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Congelados de Mar\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3001/api/category/61b4bf8588174e5c543777e4",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"api",
+						"category",
+						"61b4bf8588174e5c543777e4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3001/api/category/61b4b918e235027e3fd99bdb category delete",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3001/api/category/61b4b918e235027e3fd99bdb",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"api",
+						"category",
+						"61b4b918e235027e3fd99bdb"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3001/api/product add",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Leche Entera\",\r\n    \"category_id\": \"61b4bed588174e5c543777db\",\r\n    \"size\": {\r\n        \"width\": 200,\r\n        \"height\": 200\r\n    },\r\n    \"colors\": [\"white\", \"black\", \"green\"],\r\n    \"features\": [\r\n        {\"name\": \"Se vence hoy\",\"description\": \"El proudcto se vence hoy\", \"lot_id\": \"61b4cc71c5cf3ccc20494f9b\"}\r\n    ]\r\n}\r\n\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3001/api/product",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"api",
+						"product"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3001/api/product index",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3001/api/product",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"api",
+						"product"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3001/api/auth/register add",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"Jairo A vinas P\",\r\n    \"email\":\"jairo.vinas@gmail.com\",\r\n    \"password\":\"123456789\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3001/api/auth/register",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"api",
+						"auth",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3001/api/auth/login login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\":\"jairo.vinas@gmail.com\",\r\n    \"password\":\"123456789\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3001/api/auth/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"api",
+						"auth",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3001/api/auth token list",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2Mzk1MzI3MDIsImRhdGEiOnsiaWQiOiI2MWI1MTI5N2M3MTk2ODllMzJlNzk3ZDIiLCJuYW1lIjoiSmFpcm8gQSB2aW5hcyBQIiwiZW1haWwiOiJqYWlyby52aW5hc0BnbWFpbC5jb20ifSwiaWF0IjoxNjM5NTI5MTAyfQ.mPXckNcBCO4lN4ojWPmpywN4X_OUy06QJ83qMQDAeKg",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:3001/api/auth",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"api",
+						"auth"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3002/api/consortium index",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3002/api/consortium",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3002",
+					"path": [
+						"api",
+						"consortium"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3002/api/consortium save",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Consorcio Mar\",\r\n    \"desc\": \"Consorcio Peaje Tasajera\",\r\n    \"img\": \"tasajera.jpg\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3002/api/consortium",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3002",
+					"path": [
+						"api",
+						"consortium"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3002/api/consortium/61ba6f28bc749889b910e77f update",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n            \"name\": \"Consorcio -  CMC\",\r\n            \"desc\": \"Consorcio Peaje Del Cesar\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3002/api/consortium/61ba6f28bc749889b910e77f",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3002",
+					"path": [
+						"api",
+						"consortium",
+						"61ba6f28bc749889b910e77f"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3002/api/consortium/61ba958a22b56772638146d0 delete",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3002/api/consortium/61ba958a22b56772638146d0",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3002",
+					"path": [
+						"api",
+						"consortium",
+						"61ba958a22b56772638146d0"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3002/api/aut/register ",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"first_name\":\"vinas P\",\r\n    \"last_name\":\"vinas P\",\r\n    \"email\":\"jairo.vinas@gmail.com\",\r\n    \"password\":\"123456789\",\r\n    \"gender\":\"M\",\r\n    \"type_doc\":\"CC\",\r\n    \"num_doc\":72006264,\r\n    \"cellphone\":\"320-543-7714\",\r\n    \"addresses\":\"Carrera 71\",\r\n    \"role\":\"ADMIN\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3002/api/aut/register",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3002",
+					"path": [
+						"api",
+						"aut",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3002/api/aut index",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3002/api/aut",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3002",
+					"path": [
+						"api",
+						"aut"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3002/api/aut/61ba9e9e6242cd5c56f03f9a update",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"first_name\": \"Jairo A\",\r\n        \"last_name\": \"vinas P\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3002/api/aut/61ba9e9e6242cd5c56f03f9a",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3002",
+					"path": [
+						"api",
+						"aut",
+						"61ba9e9e6242cd5c56f03f9a"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3002/api/rifdcard save",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"balance\": 50000,\r\n    \"plate\": \"UUX360\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3002/api/rifdcard",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3002",
+					"path": [
+						"api",
+						"rifdcard"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3002/api/rifdcard index",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3002/api/rifdcard",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3002",
+					"path": [
+						"api",
+						"rifdcard"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3002/api/rifdcard/61baaa32d9d6559e189eef07 update",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"balance\": 250000,\r\n    \"plate\": \"UUX362\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3002/api/rifdcard/61baaa32d9d6559e189eef07",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3002",
+					"path": [
+						"api",
+						"rifdcard",
+						"61baaa32d9d6559e189eef07"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3002/api/rifdcard/61baaa32d9d6559e189eef07 delete",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3002/api/rifdcard/61baaa32d9d6559e189eef07",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3002",
+					"path": [
+						"api",
+						"rifdcard",
+						"61baaa32d9d6559e189eef07"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3002/api/aut/61ba9e9e6242cd5c56f03f9a update user / rifd",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id_rifd\":\"61baa814d9d6559e189eeefb\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3002/api/aut/61ba9e9e6242cd5c56f03f9a",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3002",
+					"path": [
+						"api",
+						"aut",
+						"61ba9e9e6242cd5c56f03f9a"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3002/api/aut/login ",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\":\"jairo.vinas@gmail.com\",\r\n    \"password\":\"123456789\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3002/api/aut/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3002",
+					"path": [
+						"api",
+						"aut",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3002/api/tolls/ save",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"LOS CAUCHOS\",\r\n    \"desc\":\"Peaje Los Cauchos\",\r\n    \"id_consortium\":\"61ba6f28bc749889b910e77f\",\r\n    \"longitude\":12,\r\n    \"latitude\":95,\r\n        \"category\": [\r\n        {\"id_category\": \"I\",\"name\": \"Categoría I\",\"desc\": \"Automóviles, camperos y camionetas\", \"value\":8500},\r\n        {\"id_category\": \"II\",\"name\": \"Categoría II\",\"desc\": \"Buses, busetas con eje trasero de doble llanta y camiones de dos ejes\", \"value\":9300},\r\n        {\"id_category\": \"III\",\"name\": \"Categoría III\",\"desc\": \"Camiones de tres y cuatro ejes.\", \"value\":19500},\r\n        {\"id_category\": \"IV\",\"name\": \"Categoría VI\",\"desc\": \"Camiones de cinco ejes\", \"value\":24800},\r\n        {\"id_category\": \"V\",\"name\": \"Categoría V\",\"desc\": \"Camiones de seis ejes\", \"value\":27900},\r\n        {\"id_category\": \"VI\",\"name\": \"Categoría VI\",\"desc\": \"Camiones de hasta siete ejes\", \"value\":42700}\r\n    ],\r\n        \"booths\": [\r\n        {\"id_booths\": \"C_I\",\"name\": \"Cabina I\",\"desc\": \"Cabina de Recaudo No 1\", \"id_user\": \"61ba9e9e6242cd5c56f03f9a\"}\r\n    ] \r\n}\r\n\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3002/api/tolls/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3002",
+					"path": [
+						"api",
+						"tolls",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3002/api/tolls/ index",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3002/api/tolls/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3002",
+					"path": [
+						"api",
+						"tolls",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3002/api/tolls/61bb7277798641fd7ed04116 update1",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"LOS CAUCHOS\",\r\n    \"desc\":\"Peaje Los Cauchos...\",\r\n        \"category\": [\r\n        {\"id_category\": \"I\",\"name\": \"Categoría I\",\"desc\": \"Automóviles, camperos y camionetas\", \"value\":8500},\r\n        {\"id_category\": \"II\",\"name\": \"Categoría II\",\"desc\": \"Buses, busetas con eje trasero de doble llanta y camiones de dos ejes...\", \"value\":9300},\r\n        {\"id_category\": \"III\",\"name\": \"Categoría III\",\"desc\": \"Camiones de tres y cuatro ejes.\", \"value\":19500},\r\n        {\"id_category\": \"IV\",\"name\": \"Categoría VI\",\"desc\": \"Camiones de cinco ejes\", \"value\":24800},\r\n        {\"id_category\": \"V\",\"name\": \"Categoría V\",\"desc\": \"Camiones de seis ejes\", \"value\":27900},\r\n        {\"id_category\": \"VI\",\"name\": \"Categoría VI\",\"desc\": \"Camiones de hasta siete ejes\", \"value\":42700}\r\n    ],\r\n        \"booths\": [\r\n        {\"id_booths\": \"C_I\",\"name\": \"Cabina I\",\"desc\": \"Cabina de Recaudo No 1...\", \"id_user\": \"61ba9e9e6242cd5c56f03f9a\"}\r\n    ] \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3002/api/tolls/61bb7277798641fd7ed04116",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3002",
+					"path": [
+						"api",
+						"tolls",
+						"61bb7277798641fd7ed04116"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3002/api/tolls/61bb7277798641fd7ed04116 update",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"LOS CAUCHOS\",\r\n    \"desc\":\"Peaje Los Cauchos\",\r\n    \"id_consortium\":\"61ba6f28bc749889b910e77f\",\r\n    \"longitude\":12,\r\n    \"latitude\":95,\r\n        \"category\": [\r\n        {\"id_category\": \"I\",\"name\": \"Categoría I\",\"desc\": \"Automóviles, camperos y camionetas\", \"value\":8500},\r\n        {\"id_category\": \"II\",\"name\": \"Categoría II\",\"desc\": \"Buses, busetas con eje trasero de doble llanta y camiones de dos ejes\", \"value\":9300},\r\n        {\"id_category\": \"III\",\"name\": \"Categoría III\",\"desc\": \"Camiones de tres y cuatro ejes.\", \"value\":19500},\r\n        {\"id_category\": \"IV\",\"name\": \"Categoría VI\",\"desc\": \"Camiones de cinco ejes\", \"value\":24800},\r\n        {\"id_category\": \"V\",\"name\": \"Categoría V\",\"desc\": \"Camiones de seis ejes\", \"value\":27900},\r\n        {\"id_category\": \"VI\",\"name\": \"Categoría VI\",\"desc\": \"Camiones de hasta siete ejes\", \"value\":42700}\r\n    ],\r\n        \"booths\": [\r\n        {\"id_booths\": \"C_I\",\"name\": \"Cabina I\",\"desc\": \"Cabina de Recaudo No 1\", \"id_user\": \"61ba9e9e6242cd5c56f03f9a\"}\r\n    ] \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3002/api/tolls/61bb7277798641fd7ed04116",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3002",
+					"path": [
+						"api",
+						"tolls",
+						"61bb7277798641fd7ed04116"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3002/api/rifdcardtrans save",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id_rifdcard\":\"61baa814d9d6559e189eeefb\",\r\n    \"id_user\":\"61ba9e9e6242cd5c56f03f9a\",\r\n    \"type_trans\":\"Recarga\",\r\n    \"value1\":5000,\r\n    \"value2\":25000,\r\n    \"value3\":30000\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3002/api/rifdcardtrans",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3002",
+					"path": [
+						"api",
+						"rifdcardtrans"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3002/api/tickets index",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3002/api/tickets",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3002",
+					"path": [
+						"api",
+						"tickets"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3002/api/tickets save",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "    {\r\n    \"id_booths\":\"61bb871a8055a855bc0f7e53\",\r\n    \"id_tolls\":\"61bb7a4d68c8527843b25401\",\r\n    \"name_category\":\"Categoría I\",\r\n    \"type_payment\":\"Efectivo\",\r\n    \"id_rifdcard\": \"61baa814d9d6559e189eeefb\",\r\n    \"id_users\": \"61ba9e9e6242cd5c56f03f9a\",\r\n    \"plate\":\"MHX406\",\r\n    \"value1\": 8500,\r\n    \"value2\": 500,\r\n    \"value3\": 9000,\r\n    \"id_users_trans\": \"61ba9e9e6242cd5c56f03f9a\",  \r\n    \"img\":\"public/prueba.jpg\"\r\n    }\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3002/api/tickets",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3002",
+					"path": [
+						"api",
+						"tickets"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3003/api/aut/register authMiddleware",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"first_name\":\"Jose Manuel\",\r\n    \"last_name\":\"Viñas Carroll\",\r\n    \"email\":\"jose.vinas@gmail.com\",\r\n    \"password\":\"123456789\",\r\n    \"gender\":\"M\",\r\n    \"type_doc\":\"CC\",\r\n    \"num_doc\":10472006264,\r\n    \"cellphone\":\"320-543-7714\",\r\n    \"addresses\":\"Carrera 71\",\r\n    \"role\":\"INT\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3003/api/aut/register",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3003",
+					"path": [
+						"api",
+						"aut",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3003/api/aut/login authMiddleware",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\":\"jose.vinas@gmail.com\",\r\n    \"password\":\"123456789\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3003/api/aut/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3003",
+					"path": [
+						"api",
+						"aut",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3003/api/aut authMiddleware ",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2NDAxMTc0NjcsImRhdGEiOnsiaWQiOiI2MWMwZjBmYjk5NDg1MmVkYjNjMGQxNmEiLCJlbWFpbCI6Impvc2UudmluYXNAZ21haWwuY29tIiwicm9sZSI6IklOVCJ9LCJpYXQiOjE2NDAxMTM4Njd9.cTxyhoxx0NPybVLao8APz0K5K9jq9RYAtTh4YnzQmsU",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:3003/api/aut/index",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3003",
+					"path": [
+						"api",
+						"aut",
+						"index"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
